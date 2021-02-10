@@ -3,6 +3,9 @@ import pandas as pd
 data = pd.read_csv("nato_alphabet.csv")
 data_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 
+
+print('Easily communicate a word over the phone.\n')
+
 # User prompt
 word = input("Enter a word: ").upper()
 
